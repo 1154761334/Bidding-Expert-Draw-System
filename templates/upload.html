@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>数据公司开标抽签平台</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, select {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type=submit] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>请上传公司通讯录</h1>
+    <form method=post enctype=multipart/form-data>
+      <p><input type=file name=file></p>
+      <p><input type=number name=num_people placeholder="需要抽签的人数"></p>
+      <p>
+         <select name=department>
+            <option value="">请选择一个部门</option>
+            <option value="公司领导">公司领导</option>
+            <option value="售前部">售前部</option>
+            <option value="综合部">综合部</option>
+            <option value="财务部">财务部</option>
+            <option value="产品项目部">产品项目部</option>
+            <option value="研发部">研发部</option>
+            <option value="技术支持部">技术支持部</option>
+         </select>
+      </p>
+      <p><input type=submit value=Upload></p>
+    </form>
+</body>
+</html>
